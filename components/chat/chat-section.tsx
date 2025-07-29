@@ -146,7 +146,7 @@ export function ChatSection({
             disabled={isTyping}
             autoFocus={true}
           />
-          <Button type="submit" disabled={isTyping || !input.trim()}>
+          <Button type="submit" disabled={isTyping || !input.trim()} aria-label="Send">
             <Send className="h-4 w-4" />
           </Button>
         </form>
